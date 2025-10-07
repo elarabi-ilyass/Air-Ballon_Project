@@ -58,8 +58,8 @@ export default function Catalogue() {
               Sky Experience, More Than Just a Flight
               A hot-air balloon ride is much more than a simple journey. Sky Experience turns this aerial
               adventure into an unforgettable moment. Watch the sun rise over the Atlas Mountains, lush oases,
-              and expansive palm groves surrounding the city. A truly unique view awaits, offering you a bird's-
-              eye view of Marrakech's natural beauty.
+              and expansive palm groves surrounding the city. A truly unique view awaits, offering you a bird&apos;s-
+              eye view of Marrakech&apos;s natural beauty.
             </motion.p>
 
             {/* CTA Section */}

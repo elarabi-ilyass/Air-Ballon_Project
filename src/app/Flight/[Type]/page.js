@@ -105,11 +105,10 @@ export default function Catalogue() {
               <motion.div 
                 className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 mb-6"
                 whileHover={{ scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: "spring", stiffness: 300,duration: 0.3 }}
                 key={selectedImage}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3 }}
               >
                 <Image
                   src={selectedImage}

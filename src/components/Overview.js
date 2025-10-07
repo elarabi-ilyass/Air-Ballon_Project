@@ -63,9 +63,9 @@ export default function Catalogue() {
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed text-justify">
               <span className="font-semibold text-amber-600">Elevate Your Journey. Embrace the Skies.</span>
               <br />
-              Step into a world where luxury meets wonder. The Royal Hot-Air Balloon Flight isn't just a ride—it's a curated moment of
+              Step into a world where luxury meets wonder. The Royal Hot-Air Balloon Flight isn&apos;t just a ride—it&apos;s a curated moment of
               pure indulgence, designed for those who seek the extraordinary. From your private pick-up to the final champagne toast,
-              every detail is tailored to create an unforgettable escape above Morocco's most iconic landscapes.
+              every detail is tailored to create an unforgettable escape above Moroccos&apos; most iconic landscapes.
             </p>
           </div>
         </motion.div>

@@ -66,7 +66,7 @@ export default function ContactForm() {
               className="text-base sm:text-lg mb-6 text-gray-600"
               variants={itemVariants}
             >
-              We'll get back to you faster than a balloon lifts off at sunrise.
+              We&apos;ll get back to you faster than a balloon lifts off at sunrise.
             </motion.p>
           </motion.div>
         </motion.div>
