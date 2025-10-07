@@ -1,15 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+import { MantineProvider } from '@mantine/core';
 
 export const metadata = {
   title: "Create Next App",
@@ -19,10 +11,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body style={{ backgroundColor: '#efe8e3' }}>
+        <Navigation/>
+          <main>
+            <MantineProvider
+              withGlobalStyles
+              withNormalizeCSS
+              theme={{
+                colorScheme: 'light', // or 'dark'
+              }}
+            >
+              {children}
+            </MantineProvider>
+          </main>
+        <Footer/>
       </body>
     </html>
   );
