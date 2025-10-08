@@ -52,14 +52,32 @@ export default function Adventure()  {
                   <motion.div 
                     key={index}
                     className="flex items-center text-center gap-4"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                    initial={{ opacity: 0, x: -30 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ 
+                      duration: 0.7, 
+                      delay: 0.6 + index * 0.2,
+                      ease: "easeOut"
+                    }}
+                    whileHover={{ 
+                      x: 5,
+                      transition: { duration: 0.3 }
+                    }}
                   >
-                    <span className="w-2 h-2 bg-[#da8611] rounded-full -mt-2 flex-shrink-0"></span>
-                    <p className="text-gray-700 text-base sm:text-sm lg:text-sm leading-relaxed">
+                    <motion.span 
+                      className="w-2 h-2 bg-[#da8611] rounded-full -mt-2 flex-shrink-0"
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ duration: 0.5, delay: 0.8 + index * 0.2 }}
+                      whileHover={{ scale: 1.2 }}
+                    />
+                    <motion.p 
+                      className="text-gray-700 text-base sm:text-sm lg:text-lg leading-relaxed"
+                      whileHover={{ color: "#da8611" }}
+                      transition={{ duration: 0.3 }}
+                    >
                       {text}
-                    </p>
+                    </motion.p>
                   </motion.div>
                 ))}
               </div>
